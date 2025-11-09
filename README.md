@@ -1,7 +1,5 @@
 # algo-strategies-mini-project-sunisha_udar
 🚀 Algorithmic Problem Solving — Greedy & Dynamic Programming Approaches
-👩‍💻 Author: Sunisha Udar
-📚 Course Project | Media, Finance & Optimization Algorithms
 📖 Overview
 
 This repository contains four algorithmic problems implemented in Python, showcasing the use of Greedy and Dynamic Programming strategies across various real-world domains such as advertising, finance, scheduling, and optimization.
@@ -12,155 +10,94 @@ Each problem is implemented step-by-step with:
 ✅ Analysis (time & space complexity)
 ✅ Visualization using matplotlib
 
-🧩 Problem 1: Scheduling TV Commercials to Maximize Impact
+Problem 1: Scheduling TV Commercials to Maximize Impact
 
-Algorithmic Strategy: Greedy (Job Sequencing)
-Domain: Media & Advertisement
+Algorithm: Greedy (Job Sequencing)
+Domain: Media and Advertisement
 
-📝 Description
+Objective: Schedule commercials (ads) within available slots to maximize total revenue.
 
-Given a set of commercials, each with a deadline and revenue, the goal is to schedule them in available slots to maximize total revenue without overlap.
+Approach: Sort ads by profit (descending) and assign to latest available slot before deadline.
 
-💡 Approach
+Output: Selected ad schedule and total revenue.
 
-Sort ads by profit (descending).
+Visualization: Number of ads vs. revenue generated.
 
-Allocate each ad to the latest possible time slot before its deadline.
+Complexity: Time – O(n log n), Space – O(n)
 
-Uses a Greedy algorithm similar to the Job Sequencing Problem.
+Observation: Revenue increases with more ads but stabilizes once all slots are filled.
 
-📊 Visualization
+Problem 2: Maximizing Profit with Limited Budget
 
-A line graph showing Number of Ads vs. Total Revenue demonstrates that revenue rises with the number of ads but eventually stabilizes when all slots are filled.
+Algorithm: Dynamic Programming (0/1 Knapsack)
+Domain: Investment and Budget Planning
 
-⚙️ Complexity
+Objective: Select projects that yield maximum profit without exceeding the budget.
 
-Time: O(n log n) (due to sorting)
+Approach: Uses bottom-up 0/1 Knapsack DP to calculate optimal profit and selected projects.
 
-Space: O(n)
+Output: List of selected projects and total profit.
 
-🧠 Real-world Constraints
+Visualization: Profit vs. Budget graph.
 
-Limited air-time slots, variable ad durations, and priority-based scheduling.
+Complexity: Time – O(n × budget), Space – O(n × budget)
 
-💰 Problem 2: Maximizing Profit with Limited Budget
+Observation: Profit rises with budget until optimal investment is reached, then flattens.
 
-Algorithmic Strategy: Dynamic Programming (0/1 Knapsack)
-Domain: Investment & Budget Planning
+Problem 3: Factory Production Optimization
 
-📝 Description
+Algorithm: Dynamic Programming (Resource Allocation)
+Domain: Manufacturing and Supply Chain
 
-Select projects with associated costs and profits to achieve maximum profit without exceeding a given budget.
+Objective: Maximize profit by optimizing production under limited resources.
 
-💡 Approach
+Approach: Similar to Knapsack DP; selects production combinations for maximum gain.
 
-Uses bottom-up 0/1 Knapsack DP to compute maximum achievable profit.
+Output: Optimal production plan and maximum achievable profit.
 
-Tracks which projects contribute to that profit.
+Visualization: Resource usage vs. total profit.
 
-📊 Visualization
+Observation: Profit grows gradually and plateaus at capacity limit.
 
-Plot of Profit vs. Budget shows profit increasing with investment until reaching a plateau — indicating optimal budget utilization.
+Problem 4: Delivery Route Optimization
 
-⚙️ Complexity
+Algorithm: Greedy (Shortest Path Heuristic)
+Domain: Logistics and Transportation
 
-Time: O(n × budget)
+Objective: Minimize total delivery distance or cost by finding an efficient route.
 
-Space: O(n × budget)
+Approach: Greedy nearest-neighbor algorithm to visit the closest unvisited city.
 
-🧠 Real-world Constraints
+Output: Route sequence and total travel distance.
 
-Budget limits, varying ROI, and project interdependencies.
+Visualization: Graph showing optimized delivery route.
 
-🏭 Problem 3: Factory Production Optimization
+Complexity: Time – O(n²), Space – O(n)
 
-Algorithmic Strategy: Dynamic Programming (Resource Allocation)
-Domain: Manufacturing & Supply Chain
+Observation: Provides a fast and practical route though not always globally optimal.
 
-📝 Description
-
-Optimize factory production by selecting items to produce within a resource or capacity limit, maximizing total profit.
-
-💡 Approach
-
-Similar to Knapsack DP, but applied to production planning.
-
-Compares profit per unit resource and optimizes output.
-
-📊 Visualization
-
-Graph between Resources Used vs. Total Profit shows gradual growth and a flattening curve — a typical diminishing returns pattern.
-
-⚙️ Complexity
-
-Time: O(n × capacity)
-
-Space: O(n × capacity)
-
-🧠 Real-world Constraints
-
-Limited raw materials, machine hours, and demand uncertainty.
-
-🚚 Problem 4: Delivery Route Optimization
-
-Algorithmic Strategy: Greedy (Shortest Path Heuristic)
-Domain: Logistics & Transportation
-
-📝 Description
-
-Determine an efficient route for deliveries to minimize distance or cost, similar to the Traveling Salesman Problem (TSP) in simplified form.
-
-💡 Approach
-
-Uses a Greedy nearest-neighbor approach to visit the closest next city.
-
-Reduces total travel cost but may not always yield the global optimum.
-
-📊 Visualization
-
-A connected graph shows the route path with minimized total distance.
-
-⚙️ Complexity
-
-Time: O(n²)
-
-Space: O(n)
-
-🧠 Real-world Constraints
-
-Traffic conditions, delivery time windows, and vehicle capacity.
-
-🧾 Common Libraries Used
+Common Libraries Used
 import numpy as np
 import matplotlib.pyplot as plt
 from memory_profiler import profile
 import time
 
-📊 Key Learnings
-
-Greedy algorithms make locally optimal choices to approach global optimization.
-
-Dynamic Programming provides an exact, optimal solution through overlapping subproblems.
-
-Real-world optimization often balances between speed (Greedy) and accuracy (DP).
-
-🖥️ How to Run
+How to Run
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/Algorithmic-Optimization-Projects.git
-cd Algorithmic-Optimization-Projects
+git clone https://github.com/<your-username>/Algorithmic-Optimization.git
+cd Algorithmic-Optimization
 
 
-Run any problem file (e.g., problem1_greedy_ads.py):
+Run any problem file:
 
 python problem1_greedy_ads.py
 
 
-View generated output and visualization graph.
+View results and plots.
 
-👩‍💻 Author
+Author
 
 Sunisha Udar
-🎓 Data Science & Algorithm Enthusiast
-📫 Feel free to connect or contribute!
+Data Science & Algorithm Enthusiast
