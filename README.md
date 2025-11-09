@@ -1,5 +1,6 @@
 # algo-strategies-mini-project-sunisha_udar
 🚀 Algorithmic Problem Solving — Greedy & Dynamic Programming Approaches
+
 📖 Overview
 
 This repository contains four algorithmic problems implemented in Python, showcasing the use of Greedy and Dynamic Programming strategies across various real-world domains such as advertising, finance, scheduling, and optimization.
@@ -13,6 +14,7 @@ Each problem is implemented step-by-step with:
 **Problem 1: Scheduling TV Commercials to Maximize Impact**
 
 Algorithm: Greedy (Job Sequencing)
+
 Domain: Media and Advertisement
 
 **Objective:** Schedule commercials (ads) within available slots to maximize total revenue.
@@ -30,6 +32,7 @@ Domain: Media and Advertisement
 **Problem 2: Maximizing Profit with Limited Budget**
 
 Algorithm: Dynamic Programming (0/1 Knapsack)
+
 Domain: Investment and Budget Planning
 
 **Objective:** Select projects that yield maximum profit without exceeding the budget.
@@ -47,6 +50,7 @@ Domain: Investment and Budget Planning
 **Problem 3: Factory Production Optimization**
 
 Algorithm: Dynamic Programming (Resource Allocation)
+
 Domain: Manufacturing and Supply Chain
 
 **Objective:** Maximize profit by optimizing production under limited resources.
@@ -62,6 +66,7 @@ Domain: Manufacturing and Supply Chain
 **Problem 4: Delivery Route Optimization**
 
 Algorithm: Greedy (Shortest Path Heuristic)
+
 Domain: Logistics and Transportation
 
 **Objective:** Minimize total delivery distance or cost by finding an efficient route.
@@ -78,8 +83,11 @@ Domain: Logistics and Transportation
 
 **Common Libraries Used**
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 from memory_profiler import profile
+
 import time
 
 **How to Run**
@@ -87,6 +95,7 @@ import time
 Clone the repository:
 
 git clone https://github.com/<your-username>/Algorithmic-Optimization.git
+
 cd Algorithmic-Optimization
 
 
